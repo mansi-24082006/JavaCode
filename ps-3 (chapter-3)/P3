@@ -1,0 +1,15 @@
+public class Main {
+  public static void main(String[] args) {
+    String text = "Dear <|name|>, Thanks a lot...";  // Original string with placeholder
+
+    // Replace the placeholder <|name|> with the actual name "Dimple"
+    text = text.replace("<|name|>", "Dimple");
+
+    // Print the updated string
+    System.out.println(text);
+  }
+}
+
+
+****Output
+Dear Dimple, Thanks a lot...
