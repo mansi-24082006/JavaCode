@@ -1,0 +1,16 @@
+public class Main {
+  public static void main(String[] args) {
+    // String with new lines and tab
+    String text = "Dear Dimple,\n\t This Java course is very Nice,\nThanks a lot.."; 
+    
+    // Print the formatted string
+    System.out.println(text);
+  }
+}
+
+
+
+***Output
+Dear Dimple,
+	 This Java course is very Nice,
+Thanks a lot..
