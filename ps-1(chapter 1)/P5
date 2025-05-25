@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class P5 {
+    public static void main(String[] args) {
+        System.out.println("Enter your number");
+
+        Scanner sc = new Scanner(System.in);
+
+        // Check if the next input token is an integer and print the result
+        System.out.println(sc.hasNextInt());
+
+        sc.close();
+    }
+}
+
+
+
+****Output
+Enter your number
+123
+true
