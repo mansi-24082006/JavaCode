@@ -1,0 +1,18 @@
+public class Main {
+    static void change(int [] arr){
+        arr[0] = 100;
+    }
+    public static void main(String[] args) {
+        int [] arr = {23,45,67,78,23};
+        // case 1 = change integer
+        int x = 56;
+        change(arr);// only array it can be change not element is change
+        System.out.println("The value of x after change is : " + arr[0]);
+        
+    }
+}
+
+
+
+*******Output
+The value of x after change is : 100
