@@ -1,0 +1,43 @@
+class Cylinder{
+    private int radius;
+    private int height;
+    public int getradius(){
+        return radius;
+    }
+    public void setradius(int  r){
+         radius = r;
+    }
+    public void setheight(int h){
+       height = h;
+    }
+    public int getheight(){
+        return height ;
+    }
+    public double surfaceArea(){
+        return 2* 3.14*radius*height + 2*3.14*radius*radius;
+    }
+    public double volume(){
+        return 3.14*radius*radius*height;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Cylinder use = new Cylinder();
+        use.setradius(12);
+        System.out.println(use.getradius());
+        use.setheight(15);
+        System.out.println(use.getheight());
+        // System,out.println(2*3.14*use.getradius()*use.getheight());
+        System.out.println(use.surfaceArea());
+        System.out.println(use.volume());
+        
+    }
+}
+
+
+*******Output
+12
+15
+2034.72
+6782.4
+
