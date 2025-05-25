@@ -1,0 +1,21 @@
+class Square{
+    int side;
+    public int Area(){
+        return side*side;
+    }
+    public int Perimeter(){
+        return 4*side;
+    }
+}
+    public class Main {
+    public static void main(String[] args) {
+        Square To = new Square();
+        To.side = 23;
+        System.out.println(To.Area());
+        System.out.println(To.Perimeter());
+    }
+}
+
+*******Output
+529
+92
