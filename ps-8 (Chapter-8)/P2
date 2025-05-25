@@ -1,0 +1,25 @@
+class CellPhone{
+    public void Calling(){
+        System.out.println("Calling Dimple....");
+        }
+    public void Ringing(){
+        System.out.println("Ringing....");
+        }
+    public void Vibrating(){
+        System.out.println("Vibrating....");
+        }    
+    }
+    public class Main {
+    public static void main(String[] args) {
+        CellPhone OPPO = new CellPhone();
+        OPPO.Calling();
+        OPPO.Ringing();
+        OPPO.Vibrating();
+     }
+}
+
+
+*******Output
+Calling Dimple....
+Ringing....
+Vibrating....
