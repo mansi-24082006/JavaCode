@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class P3 {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    
+    // Read an integer from the user
+    int a = sc.nextInt();
+    
+    // Check if the number is greater than 8 and print the result (true/false)
+    System.out.println(a > 8);
+    
+    sc.close();
+  }
+}
+
+
+
+
+***Output
+Input: 10
+true
+
+Input: 5
+false
