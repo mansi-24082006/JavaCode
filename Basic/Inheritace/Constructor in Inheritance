@@ -1,0 +1,28 @@
+// Base class with a constructor
+class Base1 {
+    Base1() {
+        System.out.println("Hii, I am Dimple..");  // This gets printed when a Base1 object is created
+    }
+}
+
+// Derived class inheriting from Base1
+class Derived1 extends Base1 {
+    Derived1() {
+        System.out.println("Hii, I am Dimple girl..");  // This gets printed when a Derived1 object is created
+    }
+}
+
+// Main class with main method
+class Main {
+    public static void main(String[] args) {
+        // Creating an object of Derived1 class
+        Derived1 d = new Derived1();
+    }
+}
+
+
+
+
+******output
+Hii, I am Dimple..
+Hii, I am Dimple girl..
