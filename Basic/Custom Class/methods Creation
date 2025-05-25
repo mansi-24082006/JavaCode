@@ -1,0 +1,41 @@
+//Custome Class using methods Creation...
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("This is our Custom Class...");
+        Employee Dimple = new Employee();
+        Employee Sharv = new Employee();
+        Employee Sweety = new Employee ();
+        //Attributes
+        Dimple.id = 133;
+        Dimple.name = "Dimple girl";
+        Dimple.Salary = 100000;
+        Sharv.id = 50;
+        Sharv.name = "Naughty Boy";
+        Sharv.Salary = 90000;
+        Sweety.id = 18;
+        Sweety.name = "Cute girl";
+        Sweety.Salary = 80000;
+        //System.out.println(Dimple.id);
+        //System.out.println(Dimple.name);
+        Dimple.printClass();
+        int Salary = Dimple.Salary;
+        System.out.println("Your Salary is : " + Salary);
+        Sharv.printClass();
+        System.out.println("Your Salary is : " + Sharv.Salary);
+        Sweety.printClass();
+        System.out.println("Your Salary is : " + Sweety.Salary);
+    }
+}
+
+
+*******Output
+This is our Custom Class...
+My id is 133
+My name is Dimple girl
+Your Salary is : 100000
+My id is 50
+My name is Naughty Boy
+Your Salary is : 90000
+My id is 18
+My name is Cute girl
+Your Salary is : 80000
