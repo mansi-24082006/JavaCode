@@ -1,0 +1,28 @@
+class Animal{
+        Animal(){
+            System.out.println("Hii,I am Animal..");
+        }
+        }
+class Cat extends Animal{
+        Cat(){
+            System.out.println("Hii,I am Cute Cat..");
+        }
+}
+class Dog extends Cat{
+        Dog(){
+            System.out.println("Hii,I am Dog..");
+        }
+}
+
+class Main {
+public static void main(String[] args) {
+        //   Base1 b = new Base1();
+          Dog d = new Dog();
+          }
+          }
+
+
+******Output
+Hii, I am Animal..
+Hii, I am Cute Cat..
+Hii, I am Dog..
