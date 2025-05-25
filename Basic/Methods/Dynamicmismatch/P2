@@ -1,0 +1,47 @@
+// Superclass Phone
+class Phone {
+    public void one() {
+        System.out.println("Good Night...");
+    }
+    public void on() {
+        System.out.println("Turning on your phone...");
+    }
+    public void music() {
+        System.out.println("Hii, This is Dimple site..");
+    }
+}
+
+// Subclass SmartPhone extends Phone and overrides some methods
+class SmartPhone extends Phone {
+    @Override
+    public void music() {
+        System.out.println("Hii, This is my site..");
+    }
+
+    public void two() {
+        System.out.println("Good night... Sweet Dreams..");
+    }
+
+    @Override
+    public void on() {
+        System.out.println("Turning on your Smartphone...");
+    }
+}
+
+// Main class to run the program
+class Main {
+    public static void main(String[] args) {
+        Phone obj = new SmartPhone();  // Reference of Phone but object of SmartPhone (polymorphism)
+        obj.music();   // Calls overridden music() of SmartPhone
+        obj.one();     // Calls inherited one() of Phone
+        obj.on();      // Calls overridden on() of SmartPhone
+    }
+}
+
+
+
+
+********Output
+Hii, This is my site..
+Good Night...
+Turning on your Smartphone...
