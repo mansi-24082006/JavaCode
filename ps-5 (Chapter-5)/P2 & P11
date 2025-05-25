@@ -1,0 +1,41 @@
+//for loop ----2
+    import java.util.Scanner;
+    public class Main {
+    public static void main(String[] args) {
+        int sum = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int n = sc.nextInt();
+        for(int i=0;i< n;i++){
+            sum = sum +(2*i);
+        }
+        System.out.println("sum of even number is :");
+        System.out.println(sum);
+    }
+}
+//while loop ---11
+    import java.util.Scanner;
+    public class Main {
+    public static void main(String[] args) {
+        int i=0;
+        int sum = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int n = sc.nextInt();
+        while(i<n){
+            sum = sum +(2*i);
+            i++;
+        }
+        System.out.println("sum of even number is :");
+        System.out.println(sum);
+    }
+}
+
+
+
+*******Output
+p-2) & P-11) :: Input Enter the number:5
+              Output Sum of first 5 even numbers is: 20
+
+
+        
