@@ -14,3 +14,7 @@ public class Literals {
         System.out.println("Value of short variable b: " + b);
     }
 }
+
+*****Output
+Value of short variable b: 56
+
