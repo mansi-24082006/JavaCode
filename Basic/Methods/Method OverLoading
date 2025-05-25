@@ -1,0 +1,46 @@
+// Superclass A
+class A {
+    public int a;
+
+    public int Dimple() {
+        return 133;
+    }
+
+    // Method with one integer parameter
+    public void math2(int a) {
+        System.out.println("I am method 2 of class A :" + a);
+    }
+}
+
+// Subclass D extending A
+class D extends A {
+    // Overloaded version of math2 (no parameter)
+    public void math2() {
+        System.out.println("I am method 2 of class D");
+    }
+
+    public void math3() {
+        System.out.println("I am method 3 of class D");
+    }
+}
+
+// Main class
+class Main {
+    public static void main(String[] args)
+    {
+        A a = new A();        // Object of class A
+        a.math2(133);         // Calls method from class A with one int parameter
+
+        D d = new D();        // Object of class D
+        d.math2();            // Calls overloaded method (no-arg) from class D
+
+        D de = new D();       // Another object of class D
+        d.math3();            // Calls method from class D
+    }
+}
+
+
+*******Output
+I am method 2 of class A :133
+I am method 2 of class D
+I am method 3 of class D
