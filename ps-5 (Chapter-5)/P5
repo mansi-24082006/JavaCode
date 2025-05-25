@@ -1,0 +1,24 @@
+//while loop
+     import java.util.Scanner;
+    public class Main {
+    public static void main(String[] args)
+   {int i = 1;
+    int factorial = 1;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number:");
+    
+    int n = sc.nextInt();
+         while(i<=n) {
+            factorial = factorial*i;
+            i++;
+        }
+    System.out.println(factorial);  
+    }
+}
+
+
+
+*******Output
+Input::Enter the number: 5
+Output :: 120
+
