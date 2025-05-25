@@ -1,0 +1,33 @@
+public class Main {
+    static int logic(int x, int y){
+        int z;
+        if(x>y){
+            z = x + y;
+        }
+        else {
+            z = (x + y) * 5;
+        }
+        x = 566;
+        return z ;
+    }
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 15;
+        int c = logic(a,b);
+        // Main obj = new Main();
+        // c = obj.logic(a,b);
+        int a1 = 2;
+        int b1 = 1;
+        int c1 = logic(a1,b1);
+        // c1 = obj.logic(a1,b1);
+        System.out.println(c);
+        System.out.println(c1);
+
+        }
+}
+
+
+*******Output
+125
+3
+
