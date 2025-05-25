@@ -1,10 +1,23 @@
-public class Main{
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Hii,This is Dimple  Site");
+        // Print welcome message
+        System.out.println("Hi, This is Dimple's Site");
+
+        // Declare three integer variables
         int n1 = 10;
         int n2 = 23;
         int n3 = 48;
-        int sum = n1+n2+n3;
-        System.out.println(sum);
+
+        // Calculate the sum of the three numbers
+        int sum = n1 + n2 + n3;
+
+        // Print the result
+        System.out.println("The sum of the numbers is: " + sum);
     }
 }
+
+
+*****Output
+Hi, This is Dimple's Site
+The sum of the numbers is: 81
+
