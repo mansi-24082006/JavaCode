@@ -1,0 +1,12 @@
+public class Main {
+  public static void main(String[] args) {
+    String name = "Dimple";     // Original string
+
+    name = name.toLowerCase();           // Convert to lowercase
+
+    System.out.println(name);            // Print the lowercase string
+  }
+}
+
+******Output
+dimple
