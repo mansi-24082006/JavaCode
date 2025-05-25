@@ -1,0 +1,17 @@
+public class P2 {
+  public static void main(String[] args) {
+    char grade = 'A';               // grade = 'A' (ASCII 65)
+
+    grade = (char)(grade + 8);     // grade = 'I' (ASCII 73)
+    System.out.println(grade);     // prints I
+
+    grade = (char)(grade - 8);     // grade = 'A' (ASCII 65)
+    System.out.println(grade);     // prints A
+  }
+}
+
+
+
+****Output
+I
+A
