@@ -1,0 +1,26 @@
+//Method Overloading
+  public class Main {
+  public static void foo(){
+        System.out.println("Hii , This is Dimple site...");
+    }
+    static void foo(int a){
+        System.out.println("Hello " + a  + " Wonderful!");// a is a parameter..
+    }
+    static void foo(int a,int b){
+        System.out.println("Hello " + a + " Wonderful!");
+        System.out.println("Hello " + b + " Wonderful!");
+    }
+    public static void main(String[] args) {
+        foo();
+        foo(5000);// 5000 arguments Arguments are Actual!
+        foo(677,7890);
+    }
+}
+
+*******Output
+Hii , This is Dimple site...
+Hello 5000 Wonderful!
+Hello 677 Wonderful!
+Hello 7890 Wonderful!
+
+
