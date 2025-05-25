@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Input {
+    public static void main(String[] args) {
+        System.out.println("Taking Input From the User");
+
+        // Create a Scanner object to read input
+        Scanner sc = new Scanner(System.in);
+
+        // Prompt for first number
+        System.out.println("Enter number 1");
+        int a = sc.nextInt();
+
+        // Prompt for second number
+        System.out.println("Enter number 2");
+        int b = sc.nextInt();
+
+        // Calculate the sum
+        int sum = a + b;
+
+        // Display the result
+        System.out.println("The sum of these numbers is:");
+        System.out.println(sum);
+
+        // Close the scanner to free resources
+        sc.close();
+    }
+}
+
+*****Output
+Taking Input From the User
+Enter number 1
+5
+Enter number 2
+10
+The sum of these numbers is:
+15
