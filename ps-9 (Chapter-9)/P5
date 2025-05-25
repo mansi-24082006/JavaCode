@@ -1,0 +1,21 @@
+package com.dimpu.javacoder;
+    class Sphere{
+    private int radius;
+    public int getradius(){
+        return radius;
+    }
+    public void setradius(int  r){
+         radius = r;
+    }
+   
+}
+  public class P9{
+    public static void main(String[] args) {
+        Sphere use = new Sphere();
+        use.setradius(12);
+        System.out.println(use.getradius());
+    }
+}
+
+******Output
+12
