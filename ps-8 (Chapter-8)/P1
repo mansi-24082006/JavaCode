@@ -1,0 +1,30 @@
+class Employee{
+    int Salary;
+    String name;
+    public int getSalary(){
+        return Salary;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setName(String n ){
+        name = n;
+    }
+    }
+    public class Main {
+    public static void main(String[] args) {
+        Employee Dimple = new Employee();
+        Dimple.setName("Dimple Girl");
+        Dimple.Salary = 100000;
+        System.out.println("Employee Salary is : " + Dimple.getSalary());
+        System.out.println("Employee name is : " + Dimple.getName());
+        
+    }
+}
+
+
+
+
+*******Output
+Employee Salary is : 100000
+Employee name is : Dimple Girl
