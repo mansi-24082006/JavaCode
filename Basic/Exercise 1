@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class marks {
+    public static void main(String[] args) {
+
+        // Print a heading for the user
+        System.out.println("Calculate percentage of a given student...");
+
+        // Create Scanner object to take input from the user
+        Scanner sc = new Scanner(System.in);
+
+        // Taking marks input for 5 subjects
+        System.out.println("Enter Subject 1 Marks:");
+        int m1 = sc.nextInt();
+
+        System.out.println("Enter Subject 2 Marks:");
+        int m2 = sc.nextInt();
+
+        System.out.println("Enter Subject 3 Marks:");
+        int m3 = sc.nextInt();
+
+        System.out.println("Enter Subject 4 Marks:");
+        int m4 = sc.nextInt();
+
+        System.out.println("Enter Subject 5 Marks:");
+        int m5 = sc.nextInt();
+
+        // Calculating the total sum of all 5 subject marks
+        int sum = m1 + m2 + m3 + m4 + m5;
+
+        // Calculating the percentage (out of 500 marks)
+        float sum1 = sum / 500.0f;
+        float result = sum1 * 100;
+
+        // Displaying the result
+        System.out.println("Your result calculated in percentage format:");
+        System.out.println(result + "%");
+
+        // Close the scanner
+        sc.close();
+    }
+}
+
+
+*****Output
+Calculate percentage of a given student...
+Enter Subject 1 Marks:
+75
+Enter Subject 2 Marks:
+80
+Enter Subject 3 Marks:
+90
+Enter Subject 4 Marks:
+85
+Enter Subject 5 Marks:
+70
+Your result calculated in percentage format:
+80.0%
