@@ -1,0 +1,41 @@
+// Parent class A
+class A {
+    public void m1() {
+        System.out.println("Inside A m1 method");
+    }
+}
+
+// Class B extends A
+class B extends A {
+    public void m2() {
+        System.out.println("Inside B m2 method");
+    }
+}
+
+// Class C also extends A
+class C extends A {
+    public void m3() {
+        System.out.println("Inside C m3 method");
+    }
+}
+
+// Main class
+class Main {
+    public static void main(String args[]) {
+        A a = new A();  // Object of class A
+        a.m1();         // Calls m1() from class A
+
+        B b = new B();  // Object of class B
+        b.m2();         // Calls m2() from class B
+
+        C c = new C();  // Object of class C
+        c.m3();         // Calls m3() from class C
+    }
+}
+
+
+
+**********Output
+Inside A m1 method
+Inside B m2 method
+Inside C m3 method
