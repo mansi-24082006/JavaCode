@@ -1,0 +1,16 @@
+public class P5 {
+  public static void main(String[] args){
+    int z = 7;  // variable z is declared but not used here
+
+    // Calculate expression: 7*(49/7) + (35/7)
+    int a = 7 * (49 / 7) + (35 / 7);
+
+    // Print the result
+    System.out.println(a);
+  }
+}
+
+
+
+*****Output
+54
