@@ -1,0 +1,10 @@
+public class Main{
+    public static void main(String[] args) {
+        System.out.println("Hii,This is Dimple  Site");
+        int n1 = 10;
+        int n2 = 23;
+        int n3 = 48;
+        int sum = n1+n2+n3;
+        System.out.println(sum);
+    }
+}
