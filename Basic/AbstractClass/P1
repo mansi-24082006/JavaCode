@@ -1,0 +1,59 @@
+// Abstract class Parent2
+abstract class Parent2 {
+    // Constructor - gets called when a subclass object is created
+    public Parent2() {
+        System.out.println("Mai ek constructor hoon..");
+    }
+
+    // Concrete method with implementation
+    public void Hello() {
+        System.out.println("Hello");
+    }
+
+    // Abstract methods - no body, must be implemented by concrete subclasses
+    abstract public void greet();
+    abstract public void greet2();
+}
+
+// Concrete subclass Child2 that extends Parent2
+class Child2 extends Parent2 {
+    @Override
+    public void greet() {
+        System.out.println("Good Morning ");
+    }
+
+    @Override
+    public void greet2() {
+        System.out.println("Good Afternoon..");
+    }
+}
+
+// Abstract subclass Child3 that extends Parent2
+abstract class Child3 extends Parent2 {
+    public void th() {
+        System.out.println("I am a good ..");
+    }
+}
+
+// Main class
+class Main {
+    public static void main(String[] args) {
+        // Cannot create object of abstract class Parent2
+        // Parent2 p = new Parent2(); // This would cause a compile-time error
+
+        // Create object of concrete subclass Child2
+        Child2 c = new Child2();  // This calls Parent2 constructor first
+
+        // Cannot create object of abstract subclass Child3 either
+        // Child3 c3 = new Child3(); // Compile-time error
+    }
+}
+
+
+
+*********Output
+Mai ek constructor hoon..
+Good Morning 
+Good Afternoon..
+Hello
+
