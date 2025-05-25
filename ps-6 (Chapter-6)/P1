@@ -1,0 +1,14 @@
+ public class Main {
+    public static void main(String[] args) {
+        float [] marks = {22.0f,78.9f,45.6f,67.8f,67.5f,6.8f};
+        float sum = 0;
+        for(float element: marks){
+            sum += element;
+        }
+        System.out.println("The sum is : " + sum);
+    }
+}
+
+
+*******Output
+The sum is : 288.6
