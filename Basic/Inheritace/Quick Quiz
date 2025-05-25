@@ -1,0 +1,29 @@
+// Base class Animal
+class Animal {
+    // Constructor of Animal
+    Animal() {
+        System.out.println("Hii, I am Animal..");
+    }
+}
+
+// Derived class Dog inherits from Animal
+class Dog extends Animal {
+    // Constructor of Dog
+    Dog() {
+        System.out.println("Hii, I am Dog..");
+    }
+}
+
+// Main class to run the program
+class Main {
+    public static void main(String[] args) {
+        // Creating object of Dog class
+        Dog d = new Dog();
+    }
+}
+
+
+
+********Output
+Hii, I am Animal..
+Hii, I am Dog..
