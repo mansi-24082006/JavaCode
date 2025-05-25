@@ -1,0 +1,21 @@
+import java.util.Scanner;
+    public class Main {
+    public static void main(String[] args)
+   { Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number:");//question will be only 8 multiplication table will be arrive..
+    int n = sc.nextInt();
+    int sum = 0;
+        for (int i = 1; i <= 10; i++) {
+            sum = sum + (n*i);
+        }
+            System.out.println("Your multiplication table sum is : " + sum);
+        
+    }
+}
+
+
+*******Output
+Input :: Enter the number: 8
+Output :: Your multiplication table sum is : 440
+
+
