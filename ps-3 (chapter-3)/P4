@@ -1,0 +1,18 @@
+public class Main {
+  public static void main(String[] args) {
+    String text = "Hii  ,This  is my  personal  space  about  my journey ..."; 
+    
+    // Find the index of the first single space
+    System.out.println(text.indexOf(" "));
+    
+    // Find the index of the first occurrence of six spaces in a row
+    System.out.println(text.indexOf("      "));  
+  }
+}
+
+
+
+
+*****Output
+3
+-1
