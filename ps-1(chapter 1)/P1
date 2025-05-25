@@ -1,0 +1,23 @@
+public class P1 {
+    public static void main(String[] args) {
+        // Display a welcome message
+        System.out.println("Hi, This is Dimple's Site");
+
+        // Declare three integers
+        int n1 = 10;
+        int n2 = 23;
+        int n3 = 48;
+
+        // Calculate the sum of the three numbers
+        int sum = n1 + n2 + n3;
+
+        // Display the result
+        System.out.println("The sum is: " + sum);
+    }
+}
+
+
+
+******Output
+Hi, This is Dimple's Site
+The sum is: 81
