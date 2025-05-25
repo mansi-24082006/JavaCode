@@ -1,0 +1,41 @@
+class Worker{
+    private int id;
+    private String name;
+    private int Salary;
+    public String getName(){return name;}
+    public void setName(String n){this.name = n;}
+    public void setId(int i){this.id = i;}
+    public int getId(){return id;}
+    public int getSalary(){return Salary;}
+    public Worker(){
+        id = 0;
+        name = "Your-Name-Here";
+        Salary = 100000; 
+    }
+    public Worker(String myName,int myId){
+        id = myId;
+        name = myName;
+    }
+    public Worker(String myName){
+        id = 1;
+        name = myName;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+       Worker Mansi =  new Worker();
+    //   Mansi.setName("Dimple");
+    //   Mansi.setId(133);
+      System.out.println(Mansi.getName());
+      System.out.println(Mansi.getId());
+      System.out.println(Mansi.getSalary());
+    }
+}
+
+
+
+
+*******Output
+Your-Name-Here
+0
+100000
