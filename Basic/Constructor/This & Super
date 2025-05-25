@@ -1,0 +1,45 @@
+// Superclass EkClass
+class EkClass {
+    int a;
+
+    // Constructor with parameter
+    EkClass(int a) {
+        this.a = a;  // Assigns value to instance variable 'a'
+    }
+
+    // Method to get value of 'a'
+    public int getA() {
+        return a;
+    }
+
+    // Another method returning a constant
+    public int returnnone() {
+        return 1;
+    }
+}
+
+// Subclass Doclass inheriting from EkClass
+class Doclass extends EkClass {
+    // Constructor takes int c and passes it to super (EkClass) constructor
+    Doclass(int c) {
+        super(c);  // Calls EkClass(int a)
+        System.out.println("hii, I am a Doclass.." + c);
+    }
+}
+
+// Main class to run the program
+class Main {
+    public static void main(String[] args) {
+        EkClass sc = new EkClass(67);     // Creates EkClass object with 'a' = 67
+        // System.out.println(sc.getA()); // (This line is commented out)
+
+        Doclass d = new Doclass(133);     // Creates Doclass object with 'a' = 133
+        System.out.println(d.getA());     // Prints value of 'a' inherited from EkClass
+    }
+}
+
+
+
+*******Output
+hii, I am a Doclass..133
+133
