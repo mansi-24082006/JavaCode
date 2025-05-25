@@ -1,0 +1,26 @@
+ public class Main {
+    public static void main(String[] args) {
+        int [] arr = {45,78,12,14,67,68};
+        int l = arr.length;
+        int n = Math.floorDiv(l,2);
+        int temp;
+        for(int i = 0;i<n;i++){
+            temp = arr[i];
+            arr[i]=arr[l-i-1];
+            arr[l-i-1]=temp;
+        }
+        for(int element: arr){
+            System.out.println( element + " " );
+        }
+        
+    }
+}
+
+
+*******Output
+68 
+67 
+14 
+12 
+78 
+45 
