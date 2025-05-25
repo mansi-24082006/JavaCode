@@ -1,0 +1,16 @@
+public class Literals {
+    public static void main(String[] args) {
+        // Declaring variables with different literals
+        byte age = 34;           // 1-byte integer
+        int a = 4;               // 4-byte integer
+        short b = 56;            // 2-byte integer
+        long key = 67778889999L; // Add 'L' at the end for long literal
+        char ch = 'A';           // Character literal
+        float f1 = 5.6f;         // Float literal (needs 'f' or 'F')
+        double my = 6.88;        // Double literal
+        boolean c = true;        // Boolean literal
+
+        // Printing the short variable 'b'
+        System.out.println("Value of short variable b: " + b);
+    }
+}
