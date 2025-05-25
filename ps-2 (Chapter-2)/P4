@@ -1,0 +1,19 @@
+public class P4 {
+  public static void main(String[] args) {
+    int v = 5;    // final velocity
+    int u = 8;    // initial velocity
+    int a = 2;    // acceleration (used in denominator)
+    int s = 6;    // displacement (used in denominator)
+
+    // Calculate the formula (v^2 - u^2) / (2 * a * s)
+    float sum = (v * v - u * u) / (a * s * 2.0f);
+
+    // Print the result
+    System.out.println(sum);
+  }
+}
+
+
+
+****Output
+-1.625
