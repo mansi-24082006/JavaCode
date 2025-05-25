@@ -1,0 +1,62 @@
+class Main {
+    public static void main(String[] args) {
+        cylinder c1 = new cylinder();
+        c1.printDetails();
+        
+        cylinder c2 = new cylinder(20);
+        c2.printDetails(); 
+        
+        cylinder c3= new cylinder(50);
+        c3.printDetails();
+        
+        cylinder c4 = new cylinder(20,50);
+        c4.printDetails(); 
+        }
+}
+class cylinder {
+    int radius = 0 ;
+    int height = 0 ;
+    public cylinder(){
+        
+    }
+    public cylinder(int radius){
+        this.radius = radius ;
+    }
+    public cylinder(int radius, int height){
+        this.height = height ;
+        this.radius = radius ;
+    }
+    public int printRadius(){
+        try{
+            return radius;
+        }
+        catch(Exception e){
+            System.out.println("Exception : " + e);
+            return 0;
+        }
+    }
+    public int printHeight(){
+        try{
+            return height;
+        }
+        catch(Exception e){
+            System.out.println("Exception : " + e);
+            return 0;
+        }
+    }
+    public void printDetails(){
+        System.out.println("Radius = "+ radius);
+        System.out.println("Height = "+ height);
+    }
+}
+
+
+*******Output
+Radius = 0
+Height = 0
+Radius = 20
+Height = 0
+Radius = 50
+Height = 0
+Radius = 20
+Height = 50
