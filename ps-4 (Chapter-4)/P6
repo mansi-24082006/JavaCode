@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the website URL: ");
+        String website = sc.next();
+
+        // Check the website domain extension and print message
+        if (website.endsWith(".org")) {
+            System.out.println("This is an organization website");
+        } else if (website.endsWith(".com")) {
+            System.out.println("This is a commercial website");
+        } else if (website.endsWith(".in")) {
+            System.out.println("This is an Indian website");
+        } else {
+            System.out.println("Unknown website domain");
+        }
+
+        sc.close();
+    }
+}
+
+
+
+
+
+******Output
+1.Enter the website URL: example.org
+This is an organization website
+2.Enter the website URL: google.com
+This is a commercial website
+3.Enter the website URL: example.in
+This is an Indian website
