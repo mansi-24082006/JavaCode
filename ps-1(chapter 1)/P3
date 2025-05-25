@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class P3 {
+    public static void main(String[] args) {
+        // Ask for user's name
+        System.out.println("What is your name");
+
+        // Create a Scanner object to take input
+        Scanner sc = new Scanner(System.in);
+
+        // Read the name (only the first word)
+        String name = sc.next();
+
+        // Greet the user
+        System.out.println("Hi " + name + ", this is my site");
+
+        // Close the scanner
+        sc.close();
+    }
+}
+
+
+****Output
+What is your name
+Dimple
+Hi Dimple, this is my site
