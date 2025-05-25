@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Enter your income: ");
+        int income = in.nextInt();
+
+        // Check income brackets and print corresponding tax rate
+        if (income <= 50000) {
+            System.out.println("No tax");
+        } else if (income <= 100000) {
+            System.out.println("10% tax");
+        } else if (income <= 150000) {
+            System.out.println("20% tax");
+        } else {
+            System.out.println("30% tax");
+        }
+
+        in.close();
+    }
+}
+
+
+
+
+****Output
+Input: 45000
+Output:No tax
