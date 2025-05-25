@@ -1,0 +1,13 @@
+public class P1 {
+  public static void main(String[] args) {
+    // Calculate expression using float division
+    float a = 7 / 4.f * 9 / 2.0f;
+
+    // Print the result
+    System.out.println(a);
+  }
+}
+
+
+*****Output
+7.875
