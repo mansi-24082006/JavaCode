@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+    float [] marks ={45.6f,78.9f,23.7f,45.9f,78.9f};
+    float sum = 0;
+    for(float element: marks){
+        sum += element;
+    }
+    System.out.println("Your average is : " + (sum/marks.length));
+        
+        
+    }
+}
+
+*******Output
+Your average is : 54.2
