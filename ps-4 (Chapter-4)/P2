@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        byte m1, m2, m3;
+        Scanner ma = new Scanner(System.in);
+
+        System.out.println("Enter your first subject marks:");
+        m1 = ma.nextByte();
+
+        System.out.println("Enter your second subject marks:");
+        m2 = ma.nextByte();
+
+        System.out.println("Enter your third subject marks:");
+        m3 = ma.nextByte();
+
+        // Calculate average as float to get decimal points
+        float avg = (m1 + m2 + m3) / 3.0f;
+
+        System.out.println("Your average marks is: " + avg);
+
+        // Check passing criteria
+        if (avg >= 40 && m1 >= 33 && m2 >= 33 && m3 >= 33) {
+            System.out.println("Congratulations, you are pass.");
+        } else {
+            System.out.println("Sorry, you are fail.");
+        }
+
+        ma.close();
+    }
+}
+
+
+
+
+
+*****Output
+Enter your first subject marks:
+45
+Enter your second subject marks:
+50
+Enter your third subject marks:
+40
+Your average marks is: 45.0
+Congratulations, you are pass.
