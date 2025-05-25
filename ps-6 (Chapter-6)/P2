@@ -1,0 +1,32 @@
+import java.util.Scanner;
+   public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        float [] marks ={45.6f,78.9f,23.7f,45.9f,78.9f};
+        System.out.println("Enter the marks value in float  :");
+        float num = sc.nextFloat();
+        boolean isInArray = false;
+        for(float element:marks){
+            if(num == element){
+                isInArray = true;
+                break;
+            }
+            }
+            if(isInArray){
+                System.out.println("It is in the array..");
+            }
+            else{
+                System.out.println("It is not in array..");
+            }
+        
+    }
+}
+
+*******Output
+1)....Enter the marks value in float  :
+78.9
+It is in the array..
+
+2).....Enter the marks value in float  :
+55.5
+It is not in array..
