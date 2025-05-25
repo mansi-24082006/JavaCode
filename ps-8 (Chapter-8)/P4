@@ -1,0 +1,25 @@
+class Rectangle{
+    int W;
+    int h;
+    public int Area(){
+        return W*h;
+    }
+    public int Perimeter(){
+        return W+h;
+        
+    }
+}
+
+    public class Main {
+    public static void main(String[] args) {
+        Rectangle To = new Rectangle();
+        To.W = 23;
+        To.h = 6;
+        System.out.println(To.Area());
+        System.out.println(To.Perimeter());
+    }
+}
+
+*******Output
+138
+29
