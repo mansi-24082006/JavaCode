@@ -1,0 +1,23 @@
+public class Main{
+   static double calculateAverage(double... numbers) {
+        if (numbers.length == 0) {
+            System.out.println("No numbers provided to calculate the average.");
+        }
+
+        double sum = 0;
+        for (double number:numbers) {
+            sum += number;
+            
+        }
+       return sum / numbers.length;
+    }
+
+    public static void main(String[] args) {
+        double average = calculateAverage(56.6,78.9,56.8,78,9,50.7);
+        System.out.println("Average 1: " + average);
+    }
+}
+
+
+*******Output
+Average 1: 64.58
