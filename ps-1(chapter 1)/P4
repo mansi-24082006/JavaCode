@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class P4 {
+    public static void main(String[] args) {
+        System.out.println("Enter your number");
+
+        // Create Scanner object to read user input
+        Scanner sc = new Scanner(System.in);
+
+        // Prompt user to enter distance in kilometers
+        System.out.print("Please Enter the Kilometers =  ");
+        double kilometer = sc.nextDouble();
+
+        // Convert kilometers to meters
+        double meter = kilometer * 1000.0;
+
+        // Display the distance in kilometers and meters
+        System.out.println("Distance in Kilometers = " + kilometer);
+        System.out.println("Distance in Meters     = " + meter);
+
+        // Close the scanner to avoid resource leak
+        sc.close();
+    }
+}
+
+
+
+***Output
+Enter your number
+Please Enter the Kilometers =  5.5
+Distance in Kilometers = 5.5
+Distance in Meters     = 5500.0
