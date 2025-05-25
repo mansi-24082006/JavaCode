@@ -1,0 +1,18 @@
+//Methods over the custom class
+class Employee{
+    int id ;
+    int Salary;
+    String name;
+    public void printClass(){
+       System.out.println("My id is " + id);
+       System.out.println("My name is "+ name);
+    }
+    public int getSalary(){
+        return Salary;
+    }
+}
+
+*******Output
+My id is 133
+My name is Dimple girl
+My salary is 50000
