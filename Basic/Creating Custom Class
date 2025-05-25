@@ -1,0 +1,28 @@
+//Creating Custom Class
+class Employee{
+    int id ;
+    String name;
+    public void printClass(){
+       System.out.println("My id is " + id);
+       System.out.println("My name is "+ name);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("This is our Custom Class...");
+        Employee Dimple = new Employee();
+        //Attributes
+        Dimple.id = 133;
+        Dimple.name = "Dimple girl";
+        //System.out.println(Dimple.id);
+        //System.out.println(Dimple.name);
+        Dimple.printClass();
+        
+        
+    }
+}
+
+*******Output
+This is our Custom Class...
+My id is 133
+My name is Dimple girl
