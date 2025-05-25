@@ -1,0 +1,16 @@
+public class Main {
+  public static void main(String[] args) {
+    String text = "To Lower case ";     // Original string with spaces
+
+    // Replace all spaces with underscores
+    text = text.replace(" ", "_");
+
+    // Print the modified string
+    System.out.println(text);
+  }
+}
+
+
+
+******Output
+To_Lower_case_
