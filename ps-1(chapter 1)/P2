@@ -1,0 +1,19 @@
+public class P2 {
+    public static void main(String[] args) {
+        // Marks in three subjects
+        int s1 = 89;
+        int s2 = 86;
+        int s3 = 56;
+
+        // Calculate CGPA (sum of marks / 30.0 to ensure float division)
+        float cgpa = (s1 + s2 + s3) / 30.0f;
+
+        // Display the CGPA
+        System.out.println("Your CGPA is: " + cgpa);
+    }
+}
+
+
+
+****Output
+Your CGPA is: 7.0333333
