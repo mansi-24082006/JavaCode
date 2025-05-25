@@ -1,0 +1,45 @@
+class Circle {
+    public int radius;
+
+    Circle() {
+        System.out.println("I am not param of Circle.");
+    }
+
+    Circle(int a) {
+        System.out.println("I am Circle Constructor....");
+        this.radius = a;
+    }
+
+    public double area() {
+        return this.radius * this.radius * 3.14;
+    }
+}
+
+class Cylinder extends Circle {
+    public int height;
+
+    Cylinder(int a, int h) {
+        super(a);  // Call Circle(int a) constructor to set radius
+        System.out.println("I am Cylinder Constructor...");
+        this.height = h;
+    }
+
+    public double volume() {
+        return 3.14 * this.radius * this.radius * this.height;
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Cylinder obj = new Cylinder(12, 34);
+        System.out.println("Volume of cylinder: " + obj.volume());
+    }
+}
+
+
+
+
+***********Output
+I am Circle Constructor....
+I am Cylinder Constructor...
+Volume of cylinder: 15353.28
